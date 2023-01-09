@@ -1,15 +1,17 @@
 const URL = process.env.REACT_APP_URL
 
 export const projectLoader = async ({request}) => {
-    const response = await fetch(`${URL}/projects`);
+    const response = await fetch(`${URL}projects`);
     const projects = await response.json()
     return projects
 
 }
 
 export const aboutLoader = async ({request}) => {
-    const response = await fetch(`${URL}/about`);
+    const response = await fetch(`${URL}about`);
+    console.log(response)
     const about =  await response.json()
+    console.log(about)
     return about
 }
 
