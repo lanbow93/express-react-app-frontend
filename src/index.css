@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  background-color: lightgreen;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  align-self: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 20rem;
+  height: 15rem;
+}
+
+button {
+  margin: 1rem;
+}
+
+.cardHolder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 600px){
+  .cardHolder {
+    grid-template-columns: 1fr;
+  }
+}
