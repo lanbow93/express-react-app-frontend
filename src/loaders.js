@@ -9,9 +9,7 @@ export const projectLoader = async ({request}) => {
 
 export const aboutLoader = async ({request}) => {
     const response = await fetch(`${DB_URL}about`);
-    console.log(response)
     const about =  await response.json()
-    console.log(about)
     return about
 }
 

@@ -8,7 +8,7 @@ import { projectLoader, aboutLoader } from './loaders.js';
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path='' element={<App/>}>
-            <Route path='' element={<Home/>} />
+            <Route path='' element={<Home/>} loader={aboutLoader} />
             <Route path="/about" element={<About/>} loader={aboutLoader} />
             <Route path="/projects" element={<Projects/>} loader={projectLoader} />
         </Route>

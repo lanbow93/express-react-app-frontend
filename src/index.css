@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.footer a {
+  margin: 1rem;
+}
+
 nav {
   background-color: lightgreen;
   height: 3rem;
@@ -26,22 +30,53 @@ nav a {
   font-size: 1.5rem;
 }
 
-img {
-  width: 20rem;
-  height: 15rem;
-}
-
-button {
-  margin: 1rem;
-}
-
 .cardHolder {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
+.card img {
+  width: 30rem;
+  height: 20rem;
+  border-radius: 3rem;
+}
+
+.card button {
+  margin: 1rem;
+  font-size: 1.75rem;
+  border-radius: 1rem;
+  width: 10rem;
+  background-color: lightgreen;
+  color: white;
+  border-style: none;
+}
+
+p {
+  padding: 0 10rem;
+  text-align: justify;
+}
+
+
+
+.home img {
+  border-radius: 3rem;
+}
+
 @media only screen and (max-width: 600px){
   .cardHolder {
     grid-template-columns: 1fr;
+  }
+
+  p {
+    padding: 2rem;
+  }
+
+  .home img {
+    width: 80%;
+  }
+
+  .card img {
+    width: 20rem;
+    height: 15rem;
   }
 }
