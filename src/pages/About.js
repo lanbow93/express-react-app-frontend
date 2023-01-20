@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import JobCard from "../components/JobCard";
-
+import EducationCard from "../components/EducationCard";
 
 const About = (props) => {
     const data = useLoaderData()
@@ -12,6 +12,9 @@ const About = (props) => {
         })}
 
         <h1>Education</h1>
+        {data[0].education.map((item, index) => {
+            return <EducationCard data={item} key={`${index}educationCard`} />
+        })}
     </div>
 };
 

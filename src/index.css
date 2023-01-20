@@ -102,7 +102,7 @@ div .info {
   flex-direction: column;
 }
 
-.jobCard {
+.jobCard, .education {
   border-style: solid;
   display: grid;
   width: 80%;
@@ -125,6 +125,11 @@ div .info {
 .jobCard li {
   margin: 1rem;
   text-align: start;
+}
+
+.education h2, .education h3{
+  grid-column: span 2;
+  text-align: center;
 }
 
 
