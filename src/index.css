@@ -206,4 +206,8 @@ div .info {
   .jobCard ul {
     grid-column: span 1;
   }
+  .card img, .infoCard {
+    overflow-y: auto;
+  }
+
 }
