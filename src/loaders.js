@@ -9,7 +9,13 @@ export const projectLoader = async ({request}) => {
 
 export const homeLoader = async ({request}) => {
     const response = await fetch(`${DB_URL}home`);
-    const about =  await response.json()
+    const home =  await response.json()
+    return home
+}
+
+export const aboutLoader = async ({request}) => {
+    const response = await fetch(`${DB_URL}about`)
+    const about = await response.json()
     return about
 }
 

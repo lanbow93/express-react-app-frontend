@@ -22,8 +22,8 @@ const Projects = (props) => {
                         <p>{project.skills.join(", ")}</p>
                         <h2>Summary</h2>
                         <ul>
-                            {project.summary.map(bullet => {
-                            return <li>{bullet}</li>  
+                            {project.summary.map((bullet, index) => {
+                            return <li key={`${index}Bullet`}>{bullet}</li>  
                             })}
                         </ul>
                     </div>
