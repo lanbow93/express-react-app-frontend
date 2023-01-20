@@ -77,8 +77,8 @@ nav a {
 }
 
 
-.about p {
-  padding: 0 10rem;
+.about p, .home p {
+  padding: 0 15rem;
   text-align: justify;
 }
 div .info {

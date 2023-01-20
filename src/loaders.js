@@ -7,8 +7,8 @@ export const projectLoader = async ({request}) => {
 
 }
 
-export const aboutLoader = async ({request}) => {
-    const response = await fetch(`${DB_URL}about`);
+export const homeLoader = async ({request}) => {
+    const response = await fetch(`${DB_URL}home`);
     const about =  await response.json()
     return about
 }
