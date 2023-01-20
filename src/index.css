@@ -187,8 +187,9 @@ div .info {
     margin: 1rem 0 auto;
   }
 
-  .about p {
+  .about p, .home p{
     padding: 2rem;
+    text-align: justify;
   }
 
   .home img {
