@@ -41,8 +41,8 @@ nav a {
 }
 
 .card img, .infoCard {
-  width: 40rem;
-  height: 30rem;
+  width: 80%;
+  height: 80%;
   border-radius: 3rem;
   box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2);
 }
@@ -141,77 +141,40 @@ div .info {
   box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2);
 }
 
+
+
+
+
 @media only screen and (max-width: 1000px){
+  /* Project Half Screen Design */
   .card img, .infoCard {
-    width: 25rem;
-    height: 20rem;
-    border-radius: 3rem;
-    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+    height: 50%;
+  }
+  .infoCard {
     overflow-y: scroll;
-  }
-
-  .infoCard::-webkit-scrollbar {
-    background-color: grey;
-    height: 10px;
-
-  }
-  .infoCard::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-  .infoCard::-webkit-scrollbar-track {
-    height: 10px;
-    background: #f1f1f1; 
-  }
-  .infoCard::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius:10px;
-    height: 10px;
-  }
-  .infoCard::-webkit-scrollbar-thumb:hover {
-    
-    background: #555; 
-    height: 10px;
   }
 
 }
 
-
-
-
 @media only screen and (max-width: 800px){
-  
-  .cardHolder, .jobCard {
-    grid-template-columns: 1fr;
-  }
+  /* Project Mobile Design */
 
-  .jobCard h2, .date {
-    text-align: center;
-    margin: 1rem 0 auto;
-  }
-
-  .about p, .home p{
-    padding: 2rem;
-    text-align: justify;
-  }
-
-  .home img {
-    width: 80%;
-  }
-
-  .card img {
-    width: 20rem;
-    height: 15rem;
-  }
   .infoCard {
-    width: 20rem;
     height: auto;
   }
-  .jobCard ul {
-    grid-column: span 1;
+  .card img {
+    height: auto;
   }
-  .card img, .infoCard {
-    overflow-y: auto;
+
+  .home p {
+    padding : 0 4rem;
+  }
+
+  .infoCard {
+    overflow-y: scroll;
+  }
+  .cardHolder {
+    grid-template-columns: 1fr;
   }
 
 }
